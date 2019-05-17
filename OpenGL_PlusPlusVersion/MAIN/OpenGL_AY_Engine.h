@@ -337,6 +337,8 @@ public:
 
 	//::::::::::::::::旋转:平移:::::::::::::::::::::::::::::::::::::::需要手动设置矩阵模式
 	void ATENGINE_MatrixMode(unsigned int MatrixMode = GL_MODELVIEW);
+	//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::矩阵单位化
+	void ATENGINE_MatrixLoadIdentity();
 public:
 	//OpenGL的一些基本图元类型
 	//GL_POINTS				点(一个顶点)
