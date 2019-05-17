@@ -60,7 +60,7 @@ void Scene::OnOrdinaryKeyboardDownEvent(unsigned char Key, int X, int Y)
 }
 void Scene::OnMouseMoveEvent(int Mouse_X, int Mouse_Y)
 {
-	std::cout << "鼠标移动 " << "X = " << Mouse_X << " Y = " << Mouse_Y << std::endl;
+	std::cout << "中文 " << "X = " << Mouse_X << " Y = " << Mouse_Y << std::endl;
 	m_LookAt_X = Mouse_X - m_WindowsWidth / 2;
 	m_LookAt_Y = -(Mouse_Y - m_WindowsHeight / 2);
 }
