@@ -199,8 +199,8 @@ void ComputerName_Ip(char *ch0, char *ch1)
 	const char *IP = inet_ntoa(*((struct in_addr *)ph->h_addr_list[0]));//此处获得本机IP
 	memcpy_s(ch1, 256, IP, 256);
 
-	std::cout << "计算机名：" << hostName.c_str() << std::endl;
-	std::cout << "计算机IP：" << IP << std::endl;
+	std::cout << "Name " << hostName.c_str() << std::endl;
+	std::cout << "IP " << IP << std::endl;
 
 	WSACleanup();
 }

@@ -40,14 +40,14 @@ CVector3D CVector3D::UnitVictor()//求单位向量
 	CVector3D Unit;//默认[0,0]
 	if (mod != 0)
 	{
-		Unit.SetCVector3D(x / mod, y / mod,z / mod);
+		Unit.SetCVector3D(x / mod, y / mod, z / mod);
 	}
 	return Unit;
 }
 
 CVector3D& CVector3D::normalized()
 {
-	float mod = this->Mod();
+	float mod = (float)this->Mod();
 	if (ISFLOATZERO(mod))
 	{
 		x = y = 0;
@@ -61,7 +61,7 @@ CVector3D& CVector3D::normalized()
 
 CVector3D CVector3D::normalize()
 {
-	float mod = this->Mod();
+	float mod = (float)this->Mod();
 	if (ISFLOATZERO(mod))
 	{
 		x = y = 0;
@@ -73,7 +73,7 @@ CVector3D CVector3D::normalize()
 
 CVector3D  CVector3D::operator+(const CVector3D& v)
 {
-	CVector3D New(x + v.x, y + v.y,z + v.z);
+	CVector3D New(x + v.x, y + v.y, z + v.z);
 	return New;
 }
 CVector3D  CVector3D::operator-(const CVector3D& v)
@@ -124,43 +124,43 @@ CVector3D&  CVector3D::operator/=(const CVector3D& v)
 
 CVector3D  CVector3D::operator+(double v)
 {
-	CVector3D New(x+v, y+v,z + v);
+	CVector3D New(x + (float)v, y + (float)v, z + (float)v);
 	return New;
 }
 CVector3D  CVector3D::operator-(double v)
 {
-	CVector3D New(x - v, y - v, z - v);
+	CVector3D New(x - (float)v, y - (float)v, z - (float)v);
 	return New;
 }
 CVector3D  CVector3D::operator*(double v)
 {
-	CVector3D New(x * v, y * v, z * v);
+	CVector3D New(x * (float)v, y * (float)v, z * (float)v);
 	return New;
 }
 CVector3D  CVector3D::operator/(double v)
 {
-	CVector3D New(x / v, y / v, z / v);
+	CVector3D New(x / (float)v, y / (float)v, z / (float)v);
 	return New;
 }
 
 CVector3D  CVector3D::operator+=(double v)
 {
-	this->SetCVector3D(x + v,y + v,z + v);
+	this->SetCVector3D(x + (float)v, y + (float)v, z + (float)v);
 	return *this;
 }
 CVector3D  CVector3D::operator-=(double v)
 {
-	this->SetCVector3D(x - v, y - v, z - v);
+	this->SetCVector3D(x - (float)v, y - (float)v, z - (float)v);
 	return *this;
 }
 CVector3D  CVector3D::operator*=(double v)
 {
-	this->SetCVector3D(x * v, y * v, z * v);
+	this->SetCVector3D(x * (float)v, y * (float)v, z * (float)v);
 	return *this;
 }
 CVector3D&  CVector3D::operator/=(double v)
 {
-	this->SetCVector3D(x / v, y / v, z / v);
+	this->SetCVector3D(x / (float)v, y / (float)v, z / (float)v);
 	return *this;
 }
 CVector3D  CVector3D::operator=(const CVector3D& v)
@@ -172,7 +172,7 @@ CVector3D  CVector3D::operator=(const CVector3D& v)
 }
 CVector3D  CVector3D::operator=(double v)
 {
-	CVector3D New(v,v,v);
+	CVector3D New((float)v, (float)v, (float)v);
 	return New;
 }
 
