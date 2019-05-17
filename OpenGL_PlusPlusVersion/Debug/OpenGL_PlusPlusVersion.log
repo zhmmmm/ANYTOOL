@@ -1,9 +1,2 @@
-﻿  BITMAP.cpp
-  Camera.cpp
-  Gadget.cpp
-  OpenGL_AY_Engine.cpp
-  Textures.cpp
-  Main.cpp
-  Scene.cpp
-  正在生成代码...
+﻿  Scene.cpp
   OpenGL_PlusPlusVersion.vcxproj -> C:\Users\pc\Desktop\ANYTOOL\Debug\OpenGL_PlusPlusVersion.exe
