@@ -13,7 +13,7 @@ void Scene::Start()
 void Scene::Update()
 {
 	Camera::CameraToWorld(this);
-	//AT->Rotate(Angle++,0,0,1);
+	AT->Rotate(Angle++,0,0,1);
 	AT->CreateQuadrangle(
 		ATATRGB::RED, ATATPOS3D(-105, +105, 0),
 		ATATRGB::YELLOW, ATATPOS3D(-105, -105, 0),
@@ -30,7 +30,7 @@ void Scene::OnOrdinaryKeyboardDownEvent(unsigned char Key, int X, int Y)
 
 	CVector3D n = (T - C).normalized();
 
-	std::cout << "ÆÕÍ¨°´ÏÂ£¡" << Key << " X = " << X << " Y = " << Y << std::endl;
+	std::cout << "Ã†Ã•ÃÂ¨Â°Â´ÃÃ‚Â£Â¡" << Key << " X = " << X << " Y = " << Y << std::endl;
 	if (Key == 'w' || Key == 'W')
 	{
 		//m_CameraPos_Z -= m_MoveSpeed_Z;
@@ -60,7 +60,7 @@ void Scene::OnOrdinaryKeyboardDownEvent(unsigned char Key, int X, int Y)
 }
 void Scene::OnMouseMoveEvent(int Mouse_X, int Mouse_Y)
 {
-	std::cout << "Êó±êÒÆ¶¯ " << "X = " << Mouse_X << " Y = " << Mouse_Y << std::endl;
+	std::cout << "ÃŠÃ³Â±ÃªÃ’Ã†Â¶Â¯ " << "X = " << Mouse_X << " Y = " << Mouse_Y << std::endl;
 	m_LookAt_X = Mouse_X - m_WindowsWidth / 2;
 	m_LookAt_Y = -(Mouse_Y - m_WindowsHeight / 2);
 }
