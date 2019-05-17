@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ATEngine">
+      <UniqueIdentifier>{889d0c63-c954-464f-b8aa-c056bbf83a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\ATEngineHead">
+      <UniqueIdentifier>{3df2d529-6480-463f-982b-99568693ea2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\ATEngineSource">
+      <UniqueIdentifier>{4a152a78-515f-4d39-832f-cf3eee2bc7a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\OpenGLDefine">
+      <UniqueIdentifier>{fc4b509b-909d-440b-a75d-1f0a2478a881}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\ThirdPartyLibraries">
+      <UniqueIdentifier>{5ba82ca3-958c-442d-b5ba-2b05af891c40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\ThirdPartyLibraries\CPLUSPLUS_SRC">
+      <UniqueIdentifier>{af627797-aebe-44c2-8581-bae4d026c6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\ThirdPartyLibraries\NOTHINGS_STD">
+      <UniqueIdentifier>{f27c8eab-e4e2-4a32-876c-9ef67b989b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\Gadget">
+      <UniqueIdentifier>{e225792c-478b-4b4d-be57-271925fd93a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\Math">
+      <UniqueIdentifier>{3c988696-2a17-45df-aed5-2d3f708eddd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\Math\MatrixPackage">
+      <UniqueIdentifier>{58f70c3c-e25a-47c6-b8bc-e2f9400d0fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\Math\Vector3D_Matrix4D">
+      <UniqueIdentifier>{44fce78b-fb2f-4d7d-8b8a-6b766c23c41c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ATEngine\HeaderFile">
+      <UniqueIdentifier>{ae329111-a378-4ad3-ba55-883fa6271a13}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\OpenGL_AY_Engine.cpp">
+      <Filter>ATEngine\ATEngineSource</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\OpenGLDefine\OpenGL_Define.cpp">
+      <Filter>ATEngine\OpenGLDefine</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\BITMAP.cpp">
+      <Filter>ATEngine\ATEngineSource</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Textures.cpp">
+      <Filter>ATEngine\ATEngineSource</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Object.cpp">
+      <Filter>ATEngine\ATEngineSource</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdPartyLibraries\CPLUSPLUS_SRC\stb_image_resize.cpp">
+      <Filter>ATEngine\ThirdPartyLibraries\CPLUSPLUS_SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdPartyLibraries\CPLUSPLUS_SRC\stb_image_write.cpp">
+      <Filter>ATEngine\ThirdPartyLibraries\CPLUSPLUS_SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="ThirdPartyLibraries\CPLUSPLUS_SRC\std_image.cpp">
+      <Filter>ATEngine\ThirdPartyLibraries\CPLUSPLUS_SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Gadget\Gadget.cpp">
+      <Filter>ATEngine\Gadget</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\MatrixPackage\CMatrix3.cpp">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\MatrixPackage\CMatrix4.cpp">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\MatrixPackage\CVictor2D.cpp">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Vector3D_Matrix4D\CMatrix_4.cpp">
+      <Filter>ATEngine\Math\Vector3D_Matrix4D</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Vector3D_Matrix4D\CVector3D.cpp">
+      <Filter>ATEngine\Math\Vector3D_Matrix4D</Filter>
+    </ClCompile>
+    <ClCompile Include="MAIN\Camera.cpp">
+      <Filter>ATEngine\ATEngineSource</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MAIN\OpenGL_AY_Engine.h">
+      <Filter>ATEngine\ATEngineHead</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\OpenGLDefine\OpenGL_Define.h">
+      <Filter>ATEngine\OpenGLDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\BITMAP.h">
+      <Filter>ATEngine\ATEngineHead</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Textures.h">
+      <Filter>ATEngine\ATEngineHead</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Object.h">
+      <Filter>ATEngine\ATEngineHead</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdPartyLibraries\NOTHINGS_STD\stb_image.h">
+      <Filter>ATEngine\ThirdPartyLibraries\NOTHINGS_STD</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdPartyLibraries\NOTHINGS_STD\stb_image_resize.h">
+      <Filter>ATEngine\ThirdPartyLibraries\NOTHINGS_STD</Filter>
+    </ClInclude>
+    <ClInclude Include="ThirdPartyLibraries\NOTHINGS_STD\stb_image_write.h">
+      <Filter>ATEngine\ThirdPartyLibraries\NOTHINGS_STD</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Gadget\Gadget.h">
+      <Filter>ATEngine\Gadget</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\MatrixPackage\CMatrix3.h">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\MatrixPackage\CMatrix4.h">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\MatrixPackage\CVictor2D.h">
+      <Filter>ATEngine\Math\MatrixPackage</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Vector3D_Matrix4D\CVector3D.h">
+      <Filter>ATEngine\Math\Vector3D_Matrix4D</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Vector3D_Matrix4D\CMatrix_4.h">
+      <Filter>ATEngine\Math\Vector3D_Matrix4D</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\Camera.h">
+      <Filter>ATEngine\ATEngineHead</Filter>
+    </ClInclude>
+    <ClInclude Include="MAIN\HeaderFile\HeaderFile.h">
+      <Filter>ATEngine\HeaderFile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

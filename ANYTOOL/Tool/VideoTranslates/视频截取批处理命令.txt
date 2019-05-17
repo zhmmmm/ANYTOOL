@@ -1,0 +1,5 @@
+利用ffmpeg将这个badapple.mp4视频按照每秒8帧截取成24位位图序列
+ffmpeg -i badapple.mp4 -r 8 -vcodec bmp %04d.bmp
+
+C:\Users\Administrator\Desktop\ANYTOOL\ANYTOOL\Tool\VideoTranslates\ffmpeg-20160425-git-9ac154d-win32-static\bin
+>ffmpeg -i C:\Users\Administrator\Desktop\ANYTOOL\ANYTOOL\Tool\VideoTranslates\Video_1.mp4 -r 8 -vcodec bmp ..\\..\\Image\\%04d.bmp

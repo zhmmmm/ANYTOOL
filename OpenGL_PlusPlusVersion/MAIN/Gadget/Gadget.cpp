@@ -1,0 +1,21 @@
+#include "Gadget.h"
+
+void Gadget::CreateQuadrangle2D()
+{
+	ATENGINE->CreateQuadrangle(
+		ATATRGB::RED, ATATPOS2D(-205, +205),
+		ATATRGB::YELLOW, ATATPOS2D(-205, -205),
+		ATATRGB::GREEN, ATATPOS2D(+205, -205),
+		ATATRGB::WHITE, ATATPOS2D(+205, +205));
+	ATENGINE->DrawEnd();
+}
+
+void Gadget::CreateQuadrangle3D()
+{
+	ATENGINE->CreateQuadrangle(
+		ATATRGB::RED, ATATPOS3D(-205, +205,0),
+		ATATRGB::YELLOW, ATATPOS3D(-205, -205,0),
+		ATATRGB::GREEN, ATATPOS3D(+205, -205,0),
+		ATATRGB::WHITE, ATATPOS3D(+205, +205,0));
+	ATENGINE->DrawEnd();
+}
