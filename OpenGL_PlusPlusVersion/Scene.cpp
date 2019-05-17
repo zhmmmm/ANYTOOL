@@ -30,7 +30,7 @@ void Scene::OnOrdinaryKeyboardDownEvent(unsigned char Key, int X, int Y)
 
 	CVector3D n = (T - C).normalized();
 
-	std::cout << "ÆÕÍ¨°´ÏÂ£¡" << Key << " X = " << X << " Y = " << Y << std::endl;
+	std::cout << "普通按下！" << Key << " X = " << X << " Y = " << Y << std::endl;
 	if (Key == 'w' || Key == 'W')
 	{
 		//m_CameraPos_Z -= m_MoveSpeed_Z;
