@@ -224,7 +224,7 @@ ATEngine_Variable::ATEngine_Variable()
 	m_ClearColor.B = 0.0f;
 	m_ClearColor.Alpha = 1.0f;
 
-	m_glClear = GL_COLOR_BUFFER_BIT;
+	m_glClear = GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT;
 
 	m_EnablePoint = FALSE;
 
@@ -308,6 +308,16 @@ void ATEngine::Console()
 void ATEngine::ATENGINE_Enable(unsigned int FUNCTION)
 {
 	glEnable(FUNCTION);
+}
+
+void ATEngine::ATENGINE_Disable(unsigned int FUNCTION)
+{
+	glDisable(FUNCTION);
+}
+
+void ATEngine::ATENGINE_EnableCilentState(unsigned int FUNCTION)
+{
+	glEnableClientState(FUNCTION);
 }
 
 void ATEngine::ATENGINE_CULLFACE(unsigned int CULLFACE)

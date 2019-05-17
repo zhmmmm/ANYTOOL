@@ -55,6 +55,7 @@ enum MATRIXMODE
 	ZERO
 };
 
+
 class ATATRGB
 {
 public:

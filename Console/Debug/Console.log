@@ -1,2 +1,6 @@
 ﻿  Main.cpp
-  Console.vcxproj -> C:\Users\pc\Desktop\ANYTOOL\Debug\Console.exe
+c:\users\pc\desktop\anytool\console\main.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\pc\desktop\anytool\console\main.cpp(202): error C2001: 常量中有换行符
+c:\users\pc\desktop\anytool\console\main.cpp(203): error C2143: 语法错误: 缺少“;”(在“std::cout”的前面)
+c:\users\pc\desktop\anytool\console\main.cpp(203): error C2001: 常量中有换行符
+c:\users\pc\desktop\anytool\console\main.cpp(205): error C2146: 语法错误: 缺少“;”(在标识符“WSACleanup”的前面)

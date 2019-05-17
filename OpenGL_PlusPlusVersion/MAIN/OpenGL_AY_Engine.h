@@ -123,6 +123,9 @@ public:
 	void SetClearColor(float R = 0.0f, float G = 0.0f, float B = 0.0f, float Alpha = 1.0f);
 	ATRGBA *GetClearColor();
 
+
+	//GL_COLOR_BUFFER_BIT 表示要清空像素信息
+	//GL_DEPTH_BUFFER_BIT 表示要清空深度缓冲信息（每一次都使用远截面的z值为清除数值）
 	void SetglClear(unsigned int glClear = GL_COLOR_BUFFER_BIT);
 	unsigned int *GetglClear();
 
@@ -226,8 +229,24 @@ public:
 	//开启功能
 	/*
 	GL_CULL_FACE //允许面裁剪
+	GL_DEPTH_TEST //开启深度测试
+
 	*/
 	static void ATENGINE_Enable(unsigned int FUNCTION = GL_CULL_FACE);
+
+	//关闭功能
+	/*
+	GL_DEPTH_TEST //关闭深度测试
+	*/
+	static void ATENGINE_Disable(unsigned int FUNCTION = GL_DEPTH_TEST);
+
+	//开启客户状态的支持
+	/*
+	GL_VERTEX_ARRAY //顶点数组支持
+	GL_COLOR_ARRAY //颜色数组支持
+	*/
+	static void ATENGINE_EnableCilentState(unsigned int FUNCTION = GL_VERTEX_ARRAY);
+
 
 	//裁那一面
 	/*
@@ -293,6 +312,10 @@ public:
 private:
 	//默认调用设置的颜色数据来清除上一次的颜色数据
 	static void ATENGINE_Runing_Draw_glClear();
+
+public:
+	//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::开启功能
+
 
 public:
 	//矩阵视口相机
