@@ -1,0 +1,14 @@
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.dll
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.pdb
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.dll
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.pdb
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.tlb
+C:\Users\Administrator\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.dll
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.pdb
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\bin\Debug\CSharPDdos.tlb
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.csprojAssemblyReference.cache
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.dll
+C:\Users\pc\Desktop\ANYTOOL\CSharPDdos\obj\Debug\CSharPDdos.pdb

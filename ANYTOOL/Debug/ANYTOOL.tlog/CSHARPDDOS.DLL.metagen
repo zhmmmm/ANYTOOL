@@ -1,0 +1,92 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly CSharPDdos, Version=1.0.*, Culture=固定语言(固定国家/地区): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct CSharPDdos.ReqState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CSharPDdos.ReqState Ready = 0 : Public, Static, Literal, HasDefault
+    CSharPDdos.ReqState Connecting = 1 : Public, Static, Literal, HasDefault
+    CSharPDdos.ReqState Requesting = 2 : Public, Static, Literal, HasDefault
+    CSharPDdos.ReqState Downloading = 3 : Public, Static, Literal, HasDefault
+    CSharPDdos.ReqState Completed = 4 : Public, Static, Literal, HasDefault
+    CSharPDdos.ReqState Failed = 5 : Public, Static, Literal, HasDefault
+Struct CSharPDdos.Protocol: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CSharPDdos.Protocol None = 0 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol TCP = 1 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol UDP = 2 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol HTTP = 3 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol slowLOIC = 4 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol ReCoil = 5 : Public, Static, Literal, HasDefault
+    CSharPDdos.Protocol ICMP = 6 : Public, Static, Literal, HasDefault
+Class CSharPDdos.cHLDos: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    CSharPDdos.IFlooder
+  Fields:
+    CSharPDdos.ReqState State : Public
+  Properties:
+    Boolean IsDelayed 'get set' : 
+    Boolean IsFlooding 'get set' : 
+    Int32 Requested 'get set' : 
+    Int32 Downloaded 'get set' : 
+    Int32 Failed 'get set' : 
+    Int32 Delay 'get set' : 
+    Int32 Timeout 'get set' : 
+  Methods:
+    get_IsDelayed(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsDelayed(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsFlooding(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsFlooding(Boolean): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Requested(): PrivateScope, Public, HideBySig, SpecialName
+    set_Requested(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Downloaded(): PrivateScope, Public, HideBySig, SpecialName
+    set_Downloaded(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Failed(): PrivateScope, Public, HideBySig, SpecialName
+    set_Failed(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Delay(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Delay(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Timeout(): PrivateScope, Public, HideBySig, SpecialName
+    set_Timeout(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Start(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Stop(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Test(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class CSharPDdos.Functions: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    RandomString(Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    RandomInt(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    RandomUserAgent(): PrivateScope, Public, Static, HideBySig
+    RandomElement(Object[]): PrivateScope, Public, Static, HideBySig
+    RandomHttpHeader(String, String, String, Boolean(Optional, HasDefault), Boolean(Optional, HasDefault), Int32(Optional, HasDefault)): PrivateScope, Public, Static, HideBySig
+    ParseInt(String, Int32, Int32, Int32&(Out)): PrivateScope, Public, Static, HideBySig
+Class CSharPDdos.XXPFlooder: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :CSharPDdos.cHLDos
+    Void .ctor(System.String, Int32, Int32, Int32, Boolean, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Start(): PrivateScope, Public, Virtual, HideBySig
+    Stop(): PrivateScope, Public, Virtual, HideBySig
+Class CSharPDdos.DDOS: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String m_IP 'get set' : 
+    Int32 m_Port 'get set' : 
+  Methods:
+    get_m_IP(): PrivateScope, Public, HideBySig, SpecialName
+    set_m_IP(String): PrivateScope, Public, HideBySig, SpecialName
+    get_m_Port(): PrivateScope, Public, HideBySig, SpecialName
+    set_m_Port(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Set_m_IP(String): PrivateScope, Public, HideBySig
+    Set_m_Port(Int32): PrivateScope, Public, HideBySig
+    Get_m_IP(): PrivateScope, Public, HideBySig
+    Get_m_Port(): PrivateScope, Public, HideBySig
+    Init_DDos(String, Int32): PrivateScope, Public, HideBySig
+    Init_DDos(Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Init_DDos(): PrivateScope, Public, HideBySig
+    Start_TCP_DDos(): PrivateScope, Public, HideBySig
+    Stop_TCP_DDos(): PrivateScope, Public, HideBySig

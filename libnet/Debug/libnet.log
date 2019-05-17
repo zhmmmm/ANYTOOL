@@ -1,0 +1,6 @@
+﻿  libnet_PlusPlus.cpp
+c:\users\pc\desktop\anytool\libnet\libnet_plusplus.cpp(102): warning C4060: switch 语句没有包含“case”或“default”标签
+c:\users\pc\desktop\anytool\libnet\libnet_plusplus.cpp(49): warning C4101: “dwErrorCode”: 未引用的局部变量
+  Main.cpp
+  正在生成代码...
+  libnet.vcxproj -> C:\Users\pc\Desktop\ANYTOOL\Debug\libnet.exe

@@ -13,7 +13,7 @@ void Scene::Start()
 void Scene::Update()
 {
 	Camera::CameraToWorld(this);
-	AT->Rotate(Angle++,0,0,1);
+	//AT->Rotate(Angle++,0,0,1);
 	AT->CreateQuadrangle(
 		ATATRGB::RED, ATATPOS3D(-105, +105, 0),
 		ATATRGB::YELLOW, ATATPOS3D(-105, -105, 0),

@@ -1,0 +1,21 @@
+﻿  PCAP_DDOS.cpp
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(46): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: 参见“inet_addr”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(48): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2219): note: 参见“gethostbyname”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(43): warning C4101: “m”: 未引用的局部变量
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(44): warning C4101: “val”: 未引用的局部变量
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(45): warning C4101: “i”: 未引用的局部变量
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(60): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 参见“inet_ntoa”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(62): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 参见“inet_ntoa”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(67): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 参见“inet_ntoa”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(101): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(162): warning C4267: “参数”: 从“size_t”转换到“u_short”，可能丢失数据
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(201): warning C4267: “参数”: 从“size_t”转换到“u_short”，可能丢失数据
+c:\users\pc\desktop\anytool\libnet_ddos\pcap_ddos.cpp(168): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1831): note: 参见“inet_addr”的声明
+  Libnet_DDOS.vcxproj -> C:\Users\pc\Desktop\ANYTOOL\Debug\Libnet_DDOS.exe
